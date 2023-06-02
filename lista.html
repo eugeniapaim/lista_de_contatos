@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/imask"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de contatos</h1>
+        </header>
+        <form id="formadicionacontato">
+            <input id="inputname" type="text" placeholder="Fulano da Silva" required>
+            <input id="inputnumber" type="text" placeholder="(00)00000-0000" required>
+            <button id="botaoadicionar" type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="exname">Fulaninho</td>
+                    <td id="exnumber">(00)00000-0000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
